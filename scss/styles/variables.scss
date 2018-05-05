@@ -1,0 +1,27 @@
+
+// VARIABLES
+
+// Colors
+$color_blue: #508AF5;
+$color_darkgray: #212121;
+$color_middlegray: #6C6C6C;
+$color_lightgray: #F7F7F7;
+$color_trasparentoverlay: rgba(0,0,0, 0.5);
+
+// Sizes
+$navbar_height: 92px;
+
+// Paddings
+$section_padding: 120px;
+$header_padding: 160px;
+
+// Font Sizes
+$font_large: 50px;
+$font_sectiontitle: 45px;
+
+// Grid Gaps
+$grid_gap: 20px;
+
+@media (max-width: 750px) {
+    $section_padding: 60px;
+}

@@ -1,0 +1,43 @@
+
+// Source+Sans+Pro:400,400i,700,700i,900
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SourceSansPro-Regular.ttf'),
+    url('../fonts/SourceSansPro-Bold.ttf'),
+    url('../fonts/SourceSansPro-Italic.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+}
+
+// Container
+.container {
+    width: 1024px;
+    height: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .container { width: 100%; }
+}
+
+.blue-title {
+    color: $color_blue;
+    margin: 0;
+}
+.main-title {
+    color: black;
+    margin: 20px 0 0 0;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+}

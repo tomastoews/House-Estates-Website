@@ -1,0 +1,86 @@
+
+// In Area Section - Home
+
+.in-area {
+    .section-title { color: black; }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 230px 230px 230px 230px;
+        justify-content: center;
+        grid-column-gap: 30px;
+
+        .item {
+            transition: 0.3s;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+
+            .description {
+                transition: 0.3s;
+                position: absolute;
+                padding: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                h2 {
+                    margin: 0;
+                    color: #508AF5;
+                }
+                h3 {
+                    margin: 0;
+                    color: white;
+                }
+            }
+        }
+        .item:hover > .description {
+            transition: 0.3s;
+            top: 0;
+        }
+        .item1 { background-image: url('../images/home/img_4.jpeg'); }
+        .item2 { 
+            background-image: url('../images/home/img_5.jpeg');
+            margin-top: 60px;
+        }
+        .item3 { background-image: url('../images/home/img_6.jpeg'); }
+        .item4 { 
+            background-image: url('../images/home/img_7.jpeg'); 
+            background-position-x: -260px;
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 1160px) { // 1024px / 1160px
+    .in-area {
+        .grid {
+            grid-template-columns: 190px 190px 190px 190px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .in-area {
+        .grid {
+            grid-template-columns: 250px 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .in-area {
+        .grid {
+            grid-template-columns: 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}

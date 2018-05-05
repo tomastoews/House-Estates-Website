@@ -1,0 +1,80 @@
+
+// House Estate Section - Home
+
+.house-estate {
+    padding: 0;
+    background-image: url('../images/home/img_bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+
+    .section-content {
+        padding: $section_padding 0;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .section-title {color: white; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 230px 230px 230px 230px;
+            justify-content: center;
+            grid-column-gap: 30px;
+
+            .item {
+                padding: 60px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #212121;
+                cursor: pointer;
+                i {
+                    color: #6C6C6C;
+                    font-size: 50px;
+                    margin-bottom: 50px;
+                }
+                h4 {
+                    margin: 0;
+                    color: white;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+            .item:hover {
+                background-color: #508AF5;
+                i { color: white; }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1160px) { // 1024px / 1160px
+    .house-estate {
+        .grid {
+            grid-template-columns: 190px 190px 190px 190px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .house-estate {
+        .grid {
+            grid-template-columns: 250px 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .house-estate {
+        .grid {
+            grid-template-columns: 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}

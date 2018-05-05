@@ -1,0 +1,93 @@
+
+.mobile_navbar {
+    display: none;
+    position: fixed;
+    
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+  
+    .navbar_inner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        #mobile_navbar_close_button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: transparent;
+            padding: 31px 40px 0 0;
+            z-index: 150;
+            i { 
+                cursor: pointer;
+                font-size: 30px;
+                color: black;
+            }
+        }
+
+        .navbar_content {
+            position: relative;
+            width: 300px;
+            height: auto;
+
+            .main-title {
+                margin: 0 0 40px 0;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                overflow: hidden;
+                li {
+                    padding: 20px 0;
+                    a {
+                        text-decoration: none;
+                    }
+                    p {
+                        width: auto;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: black;
+                    }
+                    i {
+                        color: $color_blue;
+                    }
+                    a.active {
+                        p{ color: $color_blue; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .mobile_navbar {
+        .navbar_inner .navbar_content {
+            padding-left: 30px;
+        }
+        .navbar_inner .navbar_content ul li p {
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile_navbar {
+        display: none!important;
+    }
+}

@@ -1,0 +1,135 @@
+
+// Golden Dream Section - Home
+
+.golden-dream {
+    padding-bottom: 0;
+    margin-bottom: -40px;
+    background-color: white;
+
+    // Grid
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;   
+
+        div { height: 300px; }
+
+        // Item 1
+        .grid-item1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: white;
+            h2 {
+                color: #508AF5;
+                margin: 0;
+            }
+            p {
+                color: black;
+                margin: 20px 0 0 0;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+
+        // Item 2
+        .grid-item2 {
+            background-image: url('../images/home/img_1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        // Item 3
+        .grid-item3 {
+            background-color: $color_blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .content {
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                i {
+                    color: white;
+                    font-size: 50px;
+                }
+                p {
+                    color: white;
+                    font-size: 22px;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        // Item 4
+        .grid-item4 {
+            background-image: url('../images/home/img_2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            grid-row: 2 / span 3;
+            height: auto;
+        }
+
+        // Item 5
+        .grid-item5 {
+            padding: 30px 30px 0 30px;
+            p { line-height: 1.7; }
+            p:first-child { margin-top: 0; }
+        }
+    
+        // Item 6
+        .grid-item6 {
+            background-image: url('../images/home/img_3.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .golden-dream {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+            grid-template-columns: 50% 50%;
+
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .golden-dream {
+        .grid {
+            .grid-item1 {
+                p {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .golden-dream {
+        .grid {
+            grid-template-columns: 100%;
+            grid-row-gap: 30px;
+            .grid-item1 { 
+                height: auto;
+                p { margin: 30px 0; }
+            }
+            .grid-item4 {
+                height: 300px;
+            }
+            .grid-item5 {
+                height: auto;
+                padding: 30px;
+            }
+        }
+    }
+}

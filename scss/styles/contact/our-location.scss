@@ -1,0 +1,23 @@
+
+.our-location {
+    padding: 0;
+    background-image: url('../images/home/img_bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+
+    .section-content {
+        padding: $section_padding 0;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .section-title {color: white; }
+
+        #map {
+            margin-top: 50px;
+            margin-bottom: -200px;
+            width: 100%;
+            height: 500px;
+            background-color: white;
+        }
+    }
+}

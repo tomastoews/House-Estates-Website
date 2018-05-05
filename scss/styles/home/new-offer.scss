@@ -1,0 +1,88 @@
+
+// New Offer Section - Home
+
+.new-offer {
+    background-color: $color_lightgray;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 230px 230px 230px 230px;
+        justify-content: center;
+        grid-column-gap: 30px;
+        margin: 0;
+
+        .item {
+            height: 450px;
+            background-color: white;
+            .content {
+                display: inline-block;
+                height: 320px;
+                padding: 0 35px;
+                h3 {
+                    margin: 55px 0;
+                    font-size: 1.27em;
+                }
+                h1 { margin: 0 0 50px 0; }
+            }
+            .image {
+                height: 130px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .item1 { 
+            background-color: transparent; 
+            h2 {
+                color: #508AF5;
+                margin: 0;
+            }
+            p {
+                color: black;
+                margin: 50px 0;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+        .item2 .image { background-image: url('../images/home/img_8.jpeg'); }
+        .item3 .image { background-image: url('../images/home/img_9.jpeg'); }
+        .item4 .image { background-image: url('../images/home/img_10.jpg'); }
+    }
+}
+
+@media (max-width: 1160px) { // 1024px / 1160px
+    .new-offer {
+        .grid {
+            grid-template-columns: 190px 190px 190px 190px!important;
+            grid-gap: 30px;
+            justify-content: center;
+            .item {
+                .content h3 {
+                    margin: 30px 0;
+                    font-size: 1.27em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .new-offer {
+        .grid {
+            grid-template-columns: 250px 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .new-offer {
+        .grid {
+            grid-template-columns: 250px!important;
+            grid-gap: 30px;
+            justify-content: center;
+        }
+    }
+}

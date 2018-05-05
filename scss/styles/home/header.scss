@@ -1,0 +1,53 @@
+
+// HEADER - Home
+
+.home-header {
+    background-image: url('../images/home/img_header.jpg');
+    .content {
+        padding: 250px 0;
+    }
+    h1 { text-align: left!important; 
+        line-height: 1!important; 
+    }
+    h4 {
+        font-size: 26px;
+        color: white;
+        margin: 40px 0 0 0;
+        text-align: left;
+        line-height: 1;
+    }
+    a {
+        background-color: $color_blue;
+        border-style: none;
+        color: white;
+        text-decoration: none;
+        font-weight: 700px;
+        padding: 17px 40px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-header {
+        .content {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .home-header {
+        .content {
+            .container > * {
+                text-align: center!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home-header {
+        .content { padding: 100px 40px; }
+    }
+}

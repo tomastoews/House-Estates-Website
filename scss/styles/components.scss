@@ -1,0 +1,60 @@
+
+// COMPONENTS
+
+// Header
+.page-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+        padding: $header_padding 0;
+        background-color: $color_trasparentoverlay;
+        h1 { 
+            margin: 0;
+            text-align: center;
+            font-size: $font_large; 
+            color: white;
+        }
+    }
+}
+
+// Section
+section {
+    padding: $section_padding 0;
+    width: 100%;
+    .section-title {
+        font-size: 45px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.grid-container {
+    width: 100%;
+    margin-top: 50px;
+    .item { width: 100%; }
+}
+
+// Button
+.button {
+    background-color: $color_blue;
+    border-style: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 700px;
+    padding: 17px 40px;
+    cursor: pointer;
+}
+
+
+/* Link */
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    i {
+        color: $color_blue;
+        margin-left: 5px;
+    }
+}

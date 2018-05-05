@@ -1,0 +1,66 @@
+
+.perfect-home {
+    padding-bottom: 0;
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        margin-top: 50px;
+        
+        div {
+            height: 350px;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .grid-item1 { background-image: url('../images/investments/img_3.jpg'); }
+        .grid-item2 { background-image: url('../images/investments/img_4.jpg'); }
+        .grid-item3 { background-image: url('../images/investments/img_5.jpg'); }
+        .grid-item4 { background-image: url('../images/investments/img_6.jpg'); }
+        .grid-item5 { background-image: url('../images/investments/img_7.jpg'); }
+        .grid-item6 { background-image: url('../images/investments/img_8.jpg'); }
+    }
+}
+
+@media (max-width: 1024px) {
+    .perfect-home {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .perfect-home {
+        .grid {
+            div { height: 250px; }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .perfect-home {
+        .grid {
+            grid-template-columns: auto;
+            div { height: 350px; }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .perfect-home {
+        .grid {
+            div { height: 250px; }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .perfect-home {
+        .grid {
+            div { height: 180px; }
+        }
+    }
+}

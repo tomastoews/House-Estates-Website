@@ -1,0 +1,124 @@
+
+.benefits {
+    .grid {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        .grid-item1 {
+            grid-row: 1 / 3;
+            height: auto;
+            padding: 0 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $color_blue;
+            h2 {
+                color: white;
+                margin: 0;
+            }
+            p {
+                color: white;
+                margin: 20px 0 0 0;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+        .grid-item2,
+        .grid-item3,
+        .grid-item4,
+        .grid-item5 {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .content {
+                width: 200px;
+            }
+            i {
+                color: $color_blue;
+                font-size: 46px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .benefits {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .benefits {
+        .grid {
+            grid-template-columns: 50% 50%;
+            .grid-item1 {
+                grid-column: 1 / 3;
+                grid-row: 1;
+                padding: 30px;
+            }
+            .grid-item2,
+            .grid-item3,
+            .grid-item4,
+            .grid-item5 {
+                .content {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .benefits {
+        .grid {
+            grid-template-columns: 100%;
+            align-content: center;
+            grid-row-gap: 60px;
+            .grid-item1 {
+                grid-column: 1;
+                padding: 30px;
+                p { font-size: 40px; }
+            }
+            .grid-item2,
+            .grid-item3,
+            .grid-item4,
+            .grid-item5 {
+                width: auto;
+                height: auto;
+                .content {
+                    text-align: center;
+                    width: 300px;
+                    h3 { font-size: 20px; }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .benefits {
+        .grid {
+            align-content: center;
+            grid-row-gap: 60px;
+            .grid-item1 {
+                width: auto;
+                grid-column: 1;
+                padding: 20px;
+                p { font-size: 30px; }
+            }
+        }
+    }
+}
+

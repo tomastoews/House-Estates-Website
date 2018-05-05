@@ -1,0 +1,133 @@
+
+.ad-video {
+    padding-bottom: 0;
+    .grid {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-gap: 30px;
+        div {
+            height: 350px;
+            width: auto;
+        }
+        .grid-item1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                color: $color_blue;
+                margin: 0;
+            }
+            p {
+                color: black;
+                margin: 20px 0 0 0;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+        .grid-item2 {
+            background-image: url('../images/advantages/img_1.jpeg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position-x: -70px;
+            background-position-y: -30px;
+            .overlay {
+                background-color: $color_trasparentoverlay;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: white;
+                    font-size: 70px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .ad-video {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .ad-video {
+        .grid {
+            .grid-item1 {
+                p { font-size: 40px; }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .ad-video {
+        .grid {
+            height: auto;
+            div { height: 300px; }
+            .grid-item2 {
+                background-position-x: -150px;
+                .overlay {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .ad-video {
+        .grid {
+            height: auto;
+            div { height: 300px; }
+            .grid-item1 { p { font-size: 30px; } }
+            .grid-item2 {
+                background-position-x: -150px;
+                .overlay {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .ad-video {
+        .grid {
+            height: auto;
+            div { height: 250px; }
+            .grid-item2 {
+                background-position-x: -170px;
+                background-position-y: -60px;
+                .overlay {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .ad-video {
+        .grid {
+            grid-template-columns: auto;
+            height: auto;
+            div { height: auto; }
+            .grid-item1 {
+                p { margin: 30px 0; }
+            }
+            .grid-item2 {
+                background-position-x: -170px;
+                background-position-y: -60px;
+                .overlay {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}

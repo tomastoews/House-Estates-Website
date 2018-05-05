@@ -1,0 +1,30 @@
+
+.contact-us {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 30px;
+        div {
+            height: auto;
+            width: auto;
+        }
+        .grid-item3 { padding-top: 30px; }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-us {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-us {
+        .grid {
+            grid-template-columns: auto;
+        }
+    }
+}

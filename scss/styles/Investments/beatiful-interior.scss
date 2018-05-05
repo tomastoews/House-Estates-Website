@@ -1,0 +1,66 @@
+
+.beatiful-interior {
+    padding-bottom: 0; 
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        margin-top: 50px;
+        div {
+            height: auto;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            h1 { color: $color_blue; }
+            .image { height: 250px; }
+        }
+        .grid-item1 .image { background-image: url('../images/investments/img_9.jpeg'); }
+        .grid-item2 .image { background-image: url('../images/investments/img_10.jpg'); }
+        .grid-item3 .image { background-image: url('../images/investments/img_11.jpeg'); }
+    }
+}
+
+@media (max-width: 1024px) {
+    .beatiful-interior {
+        .grid {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .beatiful-interior {
+        .grid {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .beatiful-interior {
+        .grid {
+            grid-template-columns: auto;
+            div .image { height: 350px; }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .beatiful-interior {
+        .grid {
+            grid-template-columns: auto;
+            div .image { height: 250px; }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .beatiful-interior {
+        .grid {
+            grid-template-columns: auto;
+            div .image { height: 180px; }
+        }
+    }
+}
