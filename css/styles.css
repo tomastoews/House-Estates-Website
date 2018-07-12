@@ -354,6 +354,10 @@ section {
     padding-left: 40px;
     padding-right: 40px; } }
 
+@media (max-width: 750px) {
+  .home-header {
+    background-image: url("../images/home/img_header_mobile.jpg"); } }
+
 @media (max-width: 600px) {
   .home-header .content .container > * {
     text-align: center !important; } }
@@ -768,6 +772,10 @@ section {
 .investments-header {
   background-image: url("../images/investments/img_header.jpg"); }
 
+@media (max-width: 750px) {
+  .investments-header {
+    background-image: url("../images/investments/img_header_mobile.jpg"); } }
+
 .golden-dream-investments .container {
   height: auto; }
 
@@ -1032,6 +1040,10 @@ section {
 
 .advantages-header {
   background-image: url("../images/advantages/img_header.jpeg"); }
+
+@media (max-width: 750px) {
+  .advantages-header {
+    background-image: url("../images/advantages/img_header_mobile.jpeg"); } }
 
 .ad-video {
   padding-bottom: 0; }
@@ -1400,6 +1412,10 @@ section {
 
 .apartments-header {
   background-image: url("../images/apartments/img_header.jpg"); }
+
+@media (max-width: 750px) {
+  .apartments-header {
+    background-image: url("../images/apartments/img_header_mobile.jpg"); } }
 
 .family-apartment {
   background-color: #F7F7F7; }
@@ -1842,6 +1858,10 @@ section {
 
 .contact-header {
   background-image: url("../images/contact/img_header.jpg"); }
+
+@media (max-width: 750px) {
+  .contact-header {
+    background-image: url("../images/contact/img_header_mobile.jpg"); } }
 
 .contact-us .grid {
   display: grid;

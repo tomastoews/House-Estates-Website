@@ -1,2 +1,6 @@
 
 .contact-header { background-image: url('../images/contact/img_header.jpg'); }
+
+@media (max-width: 750px) {
+    .contact-header { background-image: url('../images/contact/img_header_mobile.jpg'); }
+}

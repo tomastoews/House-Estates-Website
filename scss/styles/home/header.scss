@@ -36,6 +36,12 @@
     }
 }
 
+@media (max-width: 750px) {
+    .home-header {
+        background-image: url('../images/home/img_header_mobile.jpg');
+    }
+}
+
 @media (max-width: 600px) {
     .home-header {
         .content {

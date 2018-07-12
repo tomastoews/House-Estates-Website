@@ -1,2 +1,6 @@
 
 .apartments-header { background-image: url('../images/apartments/img_header.jpg'); }
+
+@media (max-width: 750px) {
+    .apartments-header { background-image: url('../images/apartments/img_header_mobile.jpg'); }
+}

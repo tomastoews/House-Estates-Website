@@ -1,1 +1,5 @@
 .investments-header { background-image: url('../images/investments/img_header.jpg'); }
+
+@media (max-width: 750px) {
+    .investments-header { background-image: url('../images/investments/img_header_mobile.jpg'); }
+}

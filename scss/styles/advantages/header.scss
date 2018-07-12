@@ -1,1 +1,5 @@
 .advantages-header { background-image: url('../images/advantages/img_header.jpeg'); }
+
+@media (max-width: 750px) {
+    .advantages-header { background-image: url('../images/advantages/img_header_mobile.jpeg'); }
+}
