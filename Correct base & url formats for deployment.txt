@@ -1,0 +1,5 @@
+# In Header:
+    <base href="/houseestates/">
+
+# All URLs in built HTML-Files:
+    href="styles.941f07bb.css"
