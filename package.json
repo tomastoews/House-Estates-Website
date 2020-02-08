@@ -1,0 +1,21 @@
+{
+  "name": "houseestates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomastoews/House-Estates-Website.git"
+  },
+  "author": "Tomas Töws",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12",
+    "replace-in-file": "*"
+  }
+}
